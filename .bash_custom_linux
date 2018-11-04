@@ -1,0 +1,4 @@
+# aliases
+alias ls='ls --color=auto --group-directories-first --time-style=long-iso'
+alias l='ls -l'
+alias la='ls -la'
