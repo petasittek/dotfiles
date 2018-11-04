@@ -1,0 +1,15 @@
+# Append to platform specific Bash files
+# Linux - .bashrc
+# Mac - .bash_profile
+
+if [ -f ~/.bash_custom ]; then
+    . ~/.bash_custom
+fi
+
+if [ -f ~/.bash_custom_linux ]; then
+    . ~/.bash_custom_linux
+fi
+
+if [ -f ~/.bash_custom_mac ]; then
+    . ~/.bash_custom_mac
+fi
