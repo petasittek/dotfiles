@@ -1,0 +1,7 @@
+# history
+HISTSIZE=1000000
+HISTFILESIZE=1000000
+HISTCONTROL=ignoreboth
+
+# aliases
+alias less='less -i'
