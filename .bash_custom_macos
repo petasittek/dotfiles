@@ -1,4 +1,4 @@
-# aliases
+# Aliases
 alias ls='ls -G'
 alias l='ls -l'
 alias la='ls -la'

@@ -1,7 +1,14 @@
-# history
+# History
 HISTSIZE=1000000
 HISTFILESIZE=1000000
 HISTCONTROL=ignoreboth
 
-# aliases
+# Aliases
 alias less='less -i'
+
+# Completions
+#  - Git: https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+mkdir -p ~/.bash_completions
+for file in `ls ~/.bash_completions`
+  do . ~/.bash_completions/${file}
+done
