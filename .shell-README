@@ -1,0 +1,16 @@
+# Append to platform specific Bash files
+#  - Linux: ~/.bashrc
+#  - Mac: ~/.bash_profile
+#  - zsh: ~/.zshrc
+
+if [ -f ~/.shell-custom ]; then
+    . ~/.shell-custom
+fi
+
+if [ -f ~/.shell-custom-linux ]; then
+    . ~/.shell-custom-linux
+fi
+
+if [ -f ~/.shell-custom-mac ]; then
+    . ~/.shell-custom-mac
+fi
