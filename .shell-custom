@@ -15,7 +15,7 @@ function dockershell() {
     docker run --rm -i -t --entrypoint=/bin/bash "$@"
 }
 
-function dockershell() {
+function dockershellsh() {
     docker run --rm -i -t --entrypoint=/bin/sh "$@"
 }
 
