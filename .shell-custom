@@ -5,3 +5,26 @@ HISTCONTROL=ignoreboth
 
 # Aliases
 alias less='less -i'
+
+# Docker
+#
+# Inspired by: https://gist.github.com/ropnop/c21c35e67a07da2ab50dbb8a085ccd22
+# Usage: dockershell node:14-alpine
+
+function dockershell() {
+    docker run --rm -i -t --entrypoint=/bin/bash "$@"
+}
+
+function dockershell() {
+    docker run --rm -i -t --entrypoint=/bin/sh "$@"
+}
+
+function dockershellhere() {
+    dirname=${PWD##*/}
+    docker run --rm -it --entrypoint=/bin/bash -v `pwd`:/${dirname} -w /${dirname} "$@"
+}
+
+function dockershellshhere() {
+	dirname=${PWD##*/}
+    docker run --rm -it --entrypoint=/bin/sh -v `pwd`:/${dirname} -w /${dirname} "$@"
+}
